@@ -37,19 +37,11 @@ function copyText(htmlElement){
   document.execCommand("copy");
   inputElement.parentNode.removeChild(inputElement);
 }
-new_url.addEventListener('click',function(e){
-  e.preventDefault();
-})
-clipboard_icon.addEventListener('click', function(e){
-  e.preventDefault();
-  copyText(new_url);
-});  
 
 function showAndHide(element){
   element.classList.remove("d-none");
   element.classList.add("d-block");
 }
-
 $(function() {
   $(".bi").on('click', function() {
     $(this).toggleClass("bi-clipboard-check");
@@ -58,3 +50,10 @@ $(function() {
     console.log($(this).prop('classList').value);
   });
 });
+new_url.addEventListener('click',function(e){
+  e.preventDefault();
+})
+clipboard_icon.addEventListener('click', function(e){
+  e.preventDefault();
+  copyText(new_url);
+});  

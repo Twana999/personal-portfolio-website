@@ -3,3 +3,22 @@
     margin: 0;
     padding: 0;
 }
+/* .nav-item a{
+    transition-duration: 500ms;
+} */
+.nav-item a.real-nav:hover{
+text-decoration: dashed;
+background-color: #AEDBCE;
+border-radius: 5px;
+color: black;
+/* font-size: 20px; */
+}
+.navbar-toggler{
+    color: #faffaf; background-color: #95d1cc;
+}
+.position-relative div{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
