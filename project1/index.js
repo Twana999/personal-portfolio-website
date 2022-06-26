@@ -29,6 +29,7 @@ function copyText(htmlElement){
     return;
   }
   let inputElement = document.createElement("input");
+  new_url.setAttribute('title','Copied To Clipboard');
   inputElement.setAttribute("value", new_url.innerText);
   document.body.appendChild(inputElement);
   inputElement.focus();
@@ -36,7 +37,9 @@ function copyText(htmlElement){
   document.execCommand("copy");
   inputElement.parentNode.removeChild(inputElement);
 }
-
+new_url.addEventListener('click',function(e){
+  e.preventDefault();
+})
 clipboard_icon.addEventListener('click', function(e){
   e.preventDefault();
   copyText(new_url);
