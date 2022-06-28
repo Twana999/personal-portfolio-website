@@ -22,3 +22,43 @@ color: black;
     height: 50px;
     margin: 15px;
 }
+nav{
+    list-style: none;
+}
+.skills-container div{
+    border-radius: 10px;
+}
+.skills-container div:hover{
+    border: 1px solid #FFA500;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #language_and_tools{
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #language_and_tools{
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+#language_and_tools{
+    font-size: 2rem;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
