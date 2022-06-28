@@ -32,7 +32,9 @@
             height="40"
             class="d-inline-block align-text-top mx-md-2"
           />
-          <span style="font-family: Bradley Hand, cursive; font-size: 1.5rem">TwAnA</span>
+          <span style="font-family: Bradley Hand, cursive; font-size: 1.5rem"
+            >TwAnA</span
+          >
         </a>
         <div class="d-flex w-25 justify-content-around align-items-center">
           <button
@@ -42,12 +44,15 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <li class="nav-item d-block d-lg-none" onclick="changeMode()">
             <!-- I can also give that a d-sm-block d-lg-none as it is none for all lg,xl..., it is obviously visible for xs,sm,md -->
-            <a class="nav-link active" href="#"><i id="lightIcon" class="fa-regular fa-lightbulb fa-2xl"></i></a>
+            <a class="nav-link active" href="#"
+              ><i id="lightIcon" class="fa-regular fa-lightbulb fa-2xl"></i
+            ></a>
           </li>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -84,10 +89,10 @@
       <div class="container mt-5 px-5 text-center">
         <div
           class="row justify-content-around p-4 shadow"
-          style="border-radius: 20px;border:5px solid #e49500"
+          style="border-radius: 20px; border: 5px solid #e49500"
         >
           <div
-            class="col-sm-12 col-md-7 d-flex flex-column align-items-center justify-content-center"
+            class="col-sm-12 col-md-6 col-lg-7 d-flex flex-column align-items-center justify-content-center"
           >
             <div
               class="d-flex flex-column justify-content-start align-items-start"
@@ -105,12 +110,18 @@
               stage of Software Engineering at Koya University and in love With
               Web Development
             </p>
+            <button class="btn btn-outline-dark btn-lg my-4">
+                  Download CV  <i class="bi bi-download"></i>
+            </button>
           </div>
-          <div class="col-sm-12 col-md-5">
+          <div class="col-xs-12 col-md-6 col-lg-5">
             <img
               src="image/personalphoto.jpg"
-              class="img-fluid rounded"
-              style="height: 95%"
+              class="img-fluid"
+              style="
+                height: 95%;
+                border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+              "
               alt="personalImage"
             />
           </div>
@@ -130,9 +141,6 @@
       </div>
     </div>
 
- 
-
-
     <div class="container my-5">
       <section id="skills" class="my-5">
         <div class="row justify-content-center text-center align-items-center">
@@ -140,76 +148,125 @@
           <p class="col-4" id="language_and_tools">Language and Tools</p>
           <hr class="col-4 border-4 border-top border-danger" />
         </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 skills-container">
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
-           <a href="index.html" class="w-25">
-            <img src="image/skills/html-5.png" class="img-fluid" alt="" />
-           </a>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 skills-container"
+        >
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
+            <a href="index.html" class="w-25">
+              <img src="image/skills/html-5.png" class="img-fluid" alt="" />
+            </a>
             <span>HTML</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
               <img src="image/skills/css-3.png" class="img-fluid" alt="" />
-             </a>
+            </a>
             <span>CSS</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
               <img src="image/skills/js.png" class="img-fluid" alt="" />
-             </a>
+            </a>
             <span>JS</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
               <img src="image/skills/php.png" class="img-fluid" alt="" />
-             </a>            <span>PHP</span>
+            </a>
+            <span>PHP</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
               <img src="image/skills/mysql.png" class="img-fluid" alt="" />
-             </a>            <span>MYSQL</span>
+            </a>
+            <span>MYSQL</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
               <img src="image/skills/bootstrap.png" class="img-fluid" alt="" />
-             </a>            <span>Bootstrap</span>
+            </a>
+            <span>Bootstrap</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
-              <img src="image/skills/Tailwind_CSS.png" class="img-fluid" alt="" />
-             </a>            <span>Tailwind</span>
+              <img
+                src="image/skills/Tailwind_CSS.png"
+                class="img-fluid"
+                alt=""
+              />
+            </a>
+            <span>Tailwind</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2 p-3">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
               <img src="image/skills/github.png" class="img-fluid" alt="" />
-             </a>            <span>Github</span>
+            </a>
+            <span>Github</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-50">
-              <img src="image/skills/materialize.png" class="img-fluid" alt="" />
-             </a>            <span>Materialize</span>
+              <img
+                src="image/skills/materialize.png"
+                class="img-fluid"
+                alt=""
+              />
+            </a>
+            <span>Materialize</span>
           </div>
-          <div class="col d-flex flex-column align-items-center justify-content-between my-2">
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
             <a href="#" class="w-25">
               <img src="image/skills/jquery.png" class="img-fluid" alt="" />
-             </a>            <span>jQuery</span>
+            </a>
+            <span>jQuery</span>
+          </div>
+          <div
+            class="col d-flex flex-column align-items-center justify-content-between my-2 p-2"
+          >
+            <a href="#" class="w-25">
+              <img src="image/skills/git.png" class="img-fluid" alt="" />
+            </a>
+            <span>Git</span>
           </div>
         </div>
       </section>
 
       <section id="projects " class="my-5">
-
         <div class="row justify-content-center text-center align-items-center">
           <hr class="col-4 border-4 border-top border-danger" />
-          <p class="col-4" id="language_and_tools">My Projects </p>
+          <p class="col-4" id="language_and_tools">My Projects</p>
           <hr class="col-4 border-4 border-top border-danger" />
         </div>
-
+        <div class="row justify-content-md-center">
+          <div class="col">
+           <img src="image/shopping.jpg" class="img-fluid rounded" alt="">
+          <div class="desc">
+          <h2 class="title">Dropshopping Website</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maiores ad eaque, maxime excepturi nesciunt nostrum provident accusamus fugit deleniti magnam porro ea corporis adipisci pariatur. Esse libero perspiciatis sequi.</p>
+          </div>
+          </div>
+          <div class="col">3 of 3</div>
+        </div>
       </section>
-
-
-
-
 
       <section id="contact">Contact Me</section>
     </div>
