@@ -133,7 +133,7 @@ box-shadow: 10px 10px 10px 10px black;
     #projects .project .desc{
         margin-left: 0px;
         margin-top: -150px;
-        z-index: 5;
+        z-index: 6;
     }
 }
 
@@ -145,7 +145,7 @@ box-shadow: 10px 10px 10px 10px black;
  #projects .project .desc{
         margin-left: 0px;
         margin-top: -150px;
-        z-index: 5;
+        z-index: 6;
     }
     #letsGetInTouch {
         font-size:1.4rem;

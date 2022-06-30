@@ -34,7 +34,7 @@ function changeMode(){
 //  .forEach() tag of NodeList....
    document.querySelectorAll('.project > .row').forEach((tag,idx) =>
     idx % 2 === 0 ?
-    // ... add .black and .even+index classes... 0,2,4 are evens
+    // ... addd .black and .even+index classes... 0,2,4 are evens
      tag.classList.add('flex-row','even'+idx):
      //otherwise, add .white and .odd+index classes 1,3,5... are odds
      tag.classList.add('flex-row-reverse','odd'+idx)
