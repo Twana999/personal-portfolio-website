@@ -49,12 +49,7 @@ function changeMode(){
 // }
 
 
-// document.getElementById('about-info').addEventListener('mouseover',function(){
-//     document.getElementById('about-info').classList.add('bg-light')
-// })
-// document.getElementById('about-info').addEventListener('mouseout',function(){
-//     document.getElementById('about-info').classList.remove('bg-light')
-// })
+
 
 document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener('scroll', function() {
@@ -70,4 +65,11 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
   }); 
+
+
+  // var iconScrollShowing = document.documentElement.scrollTop - 500;
+  // if(document.documentElement.scrollTop >= (document.documentElement.scrollTop-500)){
+  //  alert("hello");
+  // }
+
   

@@ -49,7 +49,8 @@ nav{
     border-radius: 10px;
 }
 .skills-container div:hover{
-    border: 1px solid #FFA500;
+    /* border: 1px solid #FFA500; */
+    /* &&&&&&&&&&&&& in construction */
 }
 
 
@@ -74,26 +75,27 @@ nav{
     transform: scale(1.1);
 }
 
-.preview-btn,.sendBtn{
+.preview-btn a,.sendBtn{
+    text-decoration: none;
     color: #e39400;
     border: 1px solid #e39400;
     border-radius: 25px;
+    transition-duration: 500ms;
 }
-.preview-btn:hover,.sendBtn:hover{
+.preview-btn a:hover,.sendBtn:hover{
  color: white;
  background-color:#e39400;
 }
+.preview-btn{
+    border: 0px transparent;
+    /* I overrided the class btn, in which when I hovers over a button, it provides ugly black border*/
+}
+
 
 /* beacause it didnt support transition with bg-light I added to it in index.js (mouseover) and (mouseenter), I just commented it out */
 /* .about-info{
     transition-duration: 500ms;
 }
-
-.about-info:hover{
-box-shadow: 10px 10px 10px 10px black;
-} */
-
-
 
 /* Contact Section */
 #contact #contact-form input{
@@ -117,8 +119,32 @@ box-shadow: 10px 10px 10px 10px black;
     transition-duration: 500ms ;
   }
   .desc:hover{
-    box-shadow: 0px 0px 10px 3px #F5A962;
+    box-shadow: 0px 0px 15px 2px #F5A962;
   }
+
+  .fa-facebook{
+    color: #3b5998;
+  }
+  .fa-linkedin{
+    color: #0a66c2;
+  }
+  .fa-github{
+    color: #171515 ;
+  }
+  .fa-twitter{
+    color: #00acee;
+  }
+.about-info-detail-img{
+    /* border: 5px solid #e3862e; */
+    box-shadow: 0px 0px 15px 4px #e3862e;
+   transition-duration: 500ms ;
+}
+.about-info-detail-img:hover{
+    /* border: 5px solid #e3862e; */
+    box-shadow: 0px 0px 25px 4px #e3862e;
+    transform: scale(1.03);
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
