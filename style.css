@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mansalva&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +7,23 @@
 /* .nav-item a{
     transition-duration: 500ms;
 } */
+#scrollTop{
+    background:none;
+    outline:none;
+    border:none;
+    width: 4%;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    animation: mymove 3s infinite;
+}
+#scrollTop img{
+    width: 100%;
+}
+#scrollTop{
+    z-index:5;
+}
+
 .nav-item a.real-nav:hover{
 text-decoration: dashed;
 background-color: #AEDBCE;
@@ -25,6 +43,8 @@ color: black;
 nav{
     list-style: none;
 }
+
+/* Skills Section */
 .skills-container div{
     border-radius: 10px;
 }
@@ -32,10 +52,88 @@ nav{
     border: 1px solid #FFA500;
 }
 
+
+/* Projects Section */
+/* I used these for inner space, But I chaned my mind */
+.image-box{
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+.image-box,.project-image{
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.image-box img,.project-image img{
+    max-width: 100%;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.image-box:hover img,.project-image:hover img{
+    transform: scale(1.1);
+}
+
+.preview-btn,.sendBtn{
+    color: #e39400;
+    border: 1px solid #e39400;
+    border-radius: 25px;
+}
+.preview-btn:hover,.sendBtn:hover{
+ color: white;
+ background-color:#e39400;
+}
+
+/* beacause it didnt support transition with bg-light I added to it in index.js (mouseover) and (mouseenter), I just commented it out */
+/* .about-info{
+    transition-duration: 500ms;
+}
+
+.about-info:hover{
+box-shadow: 10px 10px 10px 10px black;
+} */
+
+
+
+/* Contact Section */
+#contact #contact-form input{
+    height: 3rem;
+}
+
+.skills-container div{
+    /* box-shadow: 0px 0px 10px 5px black; */
+    background-color: whitesmoke;
+}
+
+@keyframes mymove {
+    0% {transform: scale(1.0)}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1.0);}
+
+  }
+
+  .desc{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition-duration: 500ms ;
+  }
+  .desc:hover{
+    box-shadow: 0px 0px 10px 3px #F5A962;
+  }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #language_and_tools{
         
+    }
+    #letsGetInTouch {
+        font-size:1.3rem;
+    }
+
+    /* I copied and pasted the same code for extra small and also in small devices media query, becuase it has max-width and the other one has min-width:600px */
+    #projects .project .desc{
+        margin-left: 0px;
+        margin-top: -150px;
+        z-index: 5;
     }
 }
 
@@ -44,11 +142,22 @@ nav{
     #language_and_tools{
         font-size: 1.5rem;
     }
+ #projects .project .desc{
+        margin-left: 0px;
+        margin-top: -150px;
+        z-index: 5;
+    }
+    #letsGetInTouch {
+        font-size:1.4rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    #letsGetInTouch {
+        font-size:1.8rem;
+    }
+   
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -56,6 +165,15 @@ nav{
 #language_and_tools{
     font-size: 2rem;
 }
+#projects .project .flex-row .desc{
+    margin-left: -360px;
+}  
+#projects .project .desc{
+    margin-top: 0px;
+}
+#projects .project .flex-row-reverse .desc{
+    margin-right: -360px;
+ }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
