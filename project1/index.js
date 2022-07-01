@@ -46,10 +46,10 @@ $(function() {
   $(".bi").on('click', function() {
     $(this).toggleClass("bi-clipboard-check");
     $(this).toggleClass("bi-clipboard");
-
-    console.log($(this).prop('classList').value);
   });
 });
+
+
 new_url.addEventListener('click',function(e){
   e.preventDefault();
 })
